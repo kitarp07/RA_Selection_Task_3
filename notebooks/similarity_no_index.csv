@@ -1,0 +1,4 @@
+tibia(last)__femur,tibia(third_last)__femur,tibia(fifth_last)__femur,tibia(last)__background,tibia(third_last)__background,tibia(fifth_last)__background,femur(last)__background,femur(third_last)__background,femur(fifth_last)__background
+tensor([1.0000]),tensor([0.4203]),tensor([0.2185]),tensor([1.0000]),tensor([0.4205]),tensor([0.2154]),tensor([1.0000]),tensor([0.4179]),tensor([0.2158])
+tensor([0.4190]),tensor([1.0000]),tensor([0.2119]),tensor([0.4188]),tensor([1.0000]),tensor([0.2113]),tensor([0.4175]),tensor([1.0000]),tensor([0.2111])
+tensor([0.2186]),tensor([0.2127]),tensor([1.0000]),tensor([0.2202]),tensor([0.2143]),tensor([1.0000]),tensor([0.2206]),tensor([0.2134]),tensor([1.0000])
