@@ -93,13 +93,13 @@ def main():
     
     # apply average global pooling and extract feature vector
     tibia_extract_fifth_last, tibia_extract_third_last, tibia_extract_last = apply_global_avg_pooling_and_extract_feature_vector(tibia_extract)
-    print(tibia_extract_fifth_last.shape, tibia_extract_third_last.shape, tibia_extract_last.shape)
+    # print(tibia_extract_fifth_last.shape, tibia_extract_third_last.shape, tibia_extract_last.shape)
     
     femur_extract_fifth_last, femur_extract_third_last, femur_extract_last = apply_global_avg_pooling_and_extract_feature_vector(femur_extract)
-    print(femur_extract_fifth_last.shape, femur_extract_third_last.shape, femur_extract_last.shape)
+    # print(femur_extract_fifth_last.shape, femur_extract_third_last.shape, femur_extract_last.shape)
     
     background_extract_fifth_last, background_extract_third_last, background_extract_last = apply_global_avg_pooling_and_extract_feature_vector(background_extract)
-    print(background_extract_fifth_last.shape, background_extract_third_last.shape, background_extract_last.shape)
+    # print(background_extract_fifth_last.shape, background_extract_third_last.shape, background_extract_last.shape)
     
     # TASK 4 Feature Comparison
     similarity_tibia_last_femur_last = cosine_similarity(tibia_extract_last, femur_extract_last)

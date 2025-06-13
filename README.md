@@ -1,3 +1,24 @@
-# Task III – Feature Extraction and Similarity Analysis from 3D Knee CT
+# Task 3: 3D CT Region-wise Feature Extraction & Similarity Analysis
 
-This project involves extracting deep feature representations from three anatomical regions of a 3D knee CT scan—**tibia**, **femur**, and **background**—using a converted 3D version of the pretrained 2D DenseNet121 architecture. Cosine similarity scores are computed between region pairs to analyze representational similarity across different convolutional depths.
+## Overview
+
+This task focuses on extracting deep features from tibia, femur, and background regions in a 3D knee CT volume. A pretrained 2D DenseNet121 was inflated to handle 3D inputs. Feature vectors from selected convolutional layers were extracted for each region, and cosine similarity was computed to measure inter-region representational similarity.
+
+
+## Repository Structure
+- src/ — Scripts and modules for segmentation, model conversion, feature extraction, and similarity computing.
+- notebooks/ — Data exploration and analysis notebooks.
+- results/ — Saved segmentation mask and similarity csv file
+- main.py — Full pipeline script to run all tasks sequentially.
+
+## Installation
+Install required packages with:
+
+pip install -r requirements.txt
+
+## Usage
+Run the full processing pipeline with:
+python main.py
+
+## Report
+See report.pdf for a detailed explanation of the approach and results.

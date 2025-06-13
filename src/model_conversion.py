@@ -89,16 +89,16 @@ def inflate_model(model_2d):
         if hasattr(trans, 'conv'):
             # print(trans)
             trans.conv = inflate_conv2d(trans.conv, depth=3)
-            print(trans.conv)
+            # print(trans.conv)
             
         if hasattr(trans, 'norm'):
             trans.norm = inflate_batchnorm2d_to_3d(trans.norm)
-            print(trans.norm)
+            # print(trans.norm)
             
         if hasattr(trans, 'pool'):
             # Inflate AvgPool2D to AvgPool3D
             trans.pool = inflate_avgpool2d_to_3d(trans.pool)
-            print(trans.pool)
+            # print(trans.pool)
     
     return model_2d
 

@@ -149,8 +149,8 @@ def save_similarity_values_to_csv_file(*args):
     
     similarity_df = pd.DataFrame(data)
         # Save to CSV
-    similarity_df.to_csv('../results/similarity_values.csv', index=False)
-    print("Similarities saved to similarity_values.csv")
+    similarity_df.to_csv('C:/Users/DELL/Desktop/RA_Selection_Task_3/results/similarity.csv', index=False)
+    print("Similarities saved to similarity.csv")
 
 
     
